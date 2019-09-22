@@ -1,0 +1,52 @@
+.EQU	STARTADDS = 0x0200
+.EQU	COUNTER = 250
+.org 0
+	
+	CLR r0
+	
+	LDI XL,LOW(STARTADDS) 	; sets low byte of the register x
+	LDI XH,HIGH(STARTADDS)	; sets the high byte of the resgister x
+	
+	LDI YL,LOW(0x0300)
+	LDI YH,HIGH(0x0300)
+	
+	LDI ZL,LOW(0x0500)
+	LDI ZH,HIGH(0x0500)
+
+	LDI r23,6
+	LDI r20,COUNTER
+
+
+START:
+
+	MOV r22,r23
+	ST 	X+,r23
+	RJMP CHECK
+	
+CHECK:
+
+	SUBI r22,0x05
+	BRLO NODIV
+	BREQ DIV
+	RJMP CHECK
+
+DIV:
+	
+	ST Y+,r23
+	ADD r16,r23
+	ADC r17,r0
+	RJMP END
+	
+NODIV:
+
+	ST Z+,r23
+	ADD r18,r23
+	ADC r19,r0
+	RJMP END
+	
+END:
+
+	INC r23
+	DEC r20
+	BRNE START
+	BREAK
