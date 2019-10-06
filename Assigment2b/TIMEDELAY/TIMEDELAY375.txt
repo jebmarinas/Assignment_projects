@@ -1,0 +1,16 @@
+call DELAY375
+
+DELAY375:
+			LDI R19,3
+		f0: 
+			LDI R20, 82
+		f1:
+			LDI r21,253
+		f2:
+			DEC R21
+			BRNE f2
+			DEC R20
+			BRNE f1
+			DEC R19
+			BRNE f0
+			ret

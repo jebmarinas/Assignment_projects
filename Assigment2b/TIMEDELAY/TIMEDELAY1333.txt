@@ -1,0 +1,16 @@
+call DELAY1333
+
+DELAY1333:
+			LDI R19,10
+		f0: 
+			LDI R20, 88
+		f1:
+			LDI r21,252
+		f2:
+			DEC R21
+			BRNE f2
+			DEC R20
+			BRNE f1
+			DEC R19
+			BRNE f0
+			ret
