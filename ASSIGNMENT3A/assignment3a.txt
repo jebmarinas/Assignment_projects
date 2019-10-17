@@ -1,0 +1,53 @@
+CPE301 – SPRING 2019
+Design Assignment X
+
+Student Name: Jeb Marinas
+Student #:5003376451
+Student Email: marinj4@unlv.nevada.edu
+Primary Github address:github.com/jebmarinas
+Directory:
+
+ Submit the following for all Labs:
+In the document, for each task submit the modified or included code (only) with highlights and justifications of the modifications. Also, include the comments.
+Use the previously create a Github repository with a random name (no CPE/301, Lastname, Firstname). Place all labs under the root folder ESD301/DA, sub-folder named LABXX, with one document and one video link file for each lab, place modified asm/c files named as LabXX-TYY.asm/c.
+If multiple asm/c files or other libraries are used, create a folder LabXX-TYY and place these files inside the folder.
+The folder should have a) Word document (see template), b) source code file(s) and other include files, c) text file with youtube video links (see template).
+ 
+
+
+COMPONENTS LIST AND CONNECTION BLOCK DIAGRAM w/ PINS
+
+xplained mini
+usb
+Fdti Chip
+atmega 328pb
+INITIAL/MODIFIED/DEVELOPED CODE OF TASK 1/A
+
+ 
+ 
+
+SCHEMATICS 
+
+
+
+
+
+SCREENSHOTS OF EACH TASK OUTPUT (ATMEL STUDIO OUTPUT)
+
+ 
+
+SCREENSHOT OF EACH DEMO (BOARD SETUP)
+
+
+VIDEO LINKS OF EACH DEMO
+
+https://youtu.be/w8AZKcHMTaY
+GITHUB LINK OF THIS DA
+https://github.com/jebmarinas/cpe301/tree/master/ASSIGNMENT3A
+
+
+Student Academic Misconduct Policy
+http://studentconduct.unlv.edu/misconduct/policy.html
+
+“This assignment submission is my own, original work”.
+NAME OF THE STUDENT
